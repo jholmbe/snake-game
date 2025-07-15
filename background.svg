@@ -1,0 +1,23 @@
+<svg width="924" height="708" viewBox="0 0 924 708" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M900 24V0H24V24H900Z" fill="#222222"/>
+<path d="M0 24H24V0L0 24Z" fill="#222222"/>
+<path d="M924 0V24H900L924 0Z" fill="black"/>
+<path d="M924 -3.57628e-07H900V24L924 -3.57628e-07Z" fill="#222222"/>
+<rect x="0.75" y="24.75" width="898.5" height="682.5" fill="#222222"/>
+<rect x="0.75" y="24.75" width="898.5" height="682.5" stroke="black" stroke-width="1.5"/>
+<rect width="12" height="760" transform="matrix(0 -1 -1 0 835 69)" fill="#B3AC9C"/>
+<path d="M60 57V69H75L60 57Z" fill="#54534D"/>
+<path d="M60 57H75V69L60 57Z" fill="#B3AC9C"/>
+<path d="M850 57V69H835L850 57Z" fill="black"/>
+<path d="M850 57H835V69L850 57Z" fill="#B3AC9C"/>
+<rect width="760" height="460" transform="translate(75 69)" fill="#9DA6A4"/>
+<rect x="835" y="69" width="15" height="460" fill="black"/>
+<rect width="15" height="460" transform="matrix(-1 0 0 1 75 69)" fill="#54534D"/>
+<rect x="835" y="529" width="12" height="760" transform="rotate(90 835 529)" fill="#B3AC9C"/>
+<path d="M60 541V529H75L60 541Z" fill="#54534D"/>
+<path d="M60 541H75V529L60 541Z" fill="#B3AC9C"/>
+<path d="M850 541V529H835L850 541Z" fill="black"/>
+<path d="M850 541H835V529L850 541Z" fill="#B3AC9C"/>
+<path d="M900 24H924V684H900V24Z" fill="black"/>
+<path d="M900 708L900 684H924L900 708Z" fill="black"/>
+</svg>

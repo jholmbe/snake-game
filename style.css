@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #54534D;
+    margin: 0;
+    min-height: 100vh;
+}
+canvas {
+    padding: 0;
+    margin: 0;
+    background-color: #9DA6A4;
+}
+#tv-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+}
+#tv-screen {
+    width: 900px;
+    height: 684px;
+    flex-shrink: 0;
+    border: 1.5px solid #000;
+    background: #222;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 32px;
+    flex-direction: column;
+}
+#tv-container svg {
+    display: block;
+}
+#screen-container {
+    display: flex;
+    width: 790px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#screen-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+#TM {
+    height: 12px;
+    width: 760px;
+    align-self: stretch;
+    background: #B3AC9C;
+}
+#screen-mid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+#ML {
+    width: 15px;
+    height: 460px;
+    background: #54534D;
+    position: relative;
+}
+#MR {
+    width: 15px;
+    height: 460px;
+    background: #000;
+}
+#screen-bot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+#BM {
+    height: 12px;
+    width: 760px;
+    background: #B3AC9C;
+}
+#control-container {
+    display: flex;
+    flex: 1;
+    width: 760px;
+    flex-wrap: nowrap;
+}
+#score-container, #peak-container{
+    color: #9DA6A4;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    padding-top: 16px;
+}
+#score, #peak{
+    color: rgb(0,255,0);
+}
+#scoring-container-left, #name-container, #arrow-key-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#name-container {
+    align-items: center;
+    padding-top: 16px;
+    flex: 1.5;
+}
+#name-container span {
+    padding-top: 24px;
+}
+#ak-container {
+    display: flex;
+    flex: 1;
+}
+#arrow-key-container {
+    justify-content: center;
+    padding-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 45px);
+    grid-template-rows: repeat(2, 45px);
+    gap: 0;
+}
+#gameOverlay {
+    position: absolute;
+    width: 760px;
+    height: 460px;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
