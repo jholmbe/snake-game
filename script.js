@@ -1,12 +1,12 @@
 // Canvas width = 760, height = 460
-const canvas = document.getElementById("gameCanvas");
+const canvas = document.getElementById("game-canvas");
 const ctx = canvas.getContext("2d");
 
 // Repeatedly updated elements
-const scoreDisplay = document.getElementById('score');
-const peakDisplay = document.getElementById('peak');
+const scoreDisplay = document.getElementById("score");
+const peakDisplay = document.getElementById("peak");
 const spacebar = document.getElementById("spacebar-img");
-const gameCover = document.getElementById("gameOverlay");
+const gameCover = document.getElementById("game-overlay");
 
 // Game assets
 const appleImg = new Image();

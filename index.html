@@ -10,92 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="tv-container">
-        <div id="tv-top">
-            <svg xmlns="http://www.w3.org/2000/svg" width="900" height="24" viewBox="0 0 900 24" fill="none">
-                <path d="M900 24V0H24V24H900Z" fill="#222222"/>
-                <path d="M0 24H24V0L0 24Z" fill="#222222"/>
-            </svg>
+    <div class="game-container">
+        <canvas id="game-canvas" width="760" height="460"></canvas>
+        <div id="game-overlay"> 
+            <img src="images/play-button.svg"/>
         </div>
-        <div id="tv-corner">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M24 0V24H0L24 0Z" fill="black"/>
-                <path d="M24 -3.57628e-07H-9.53674e-07V24L24 -3.57628e-07Z" fill="#222222"/>
-            </svg>
-        </div>
-        <div id="tv-screen">
-            <div id="screen-container">
-                <div id="screen-top">
-                    <div id="TLC">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
-                            <path d="M-3.57628e-07 0V12H15L-3.57628e-07 0Z" fill="#54534D"/>
-                            <path d="M0 0H15V12L0 0Z" fill="#B3AC9C"/>
-                        </svg>
-                    </div>
-                    <div id="TM"></div>
-                    <div id="TRC">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
-                            <path d="M15 0V12H0L15 0Z" fill="black"/>
-                            <path d="M15 -1.78814e-07H0V12L15 -1.78814e-07Z" fill="#B3AC9C"/>
-                        </svg>
-                    </div>
+        <div class="control-container">
+            <div class="column-container">
+                <div class="score-count">
+                    APPLES EATEN: <span id="score" class="score-color">0/874</span>
                 </div>
-                <div id="screen-mid">
-                    <div id="ML"></div>
-                    <canvas id="gameCanvas" width="760" height="460"></canvas>
-                    <div id="gameOverlay">
-                        <img src="images/play-button.svg"/>
-                    </div>
-                    <div id="MR"></div>
-                </div>
-                <div id="screen-bot">
-                    <div id="BLC">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
-                            <path d="M0 12V-6.25849e-07H15L0 12Z" fill="#54534D"/>
-                            <path d="M0 12H15V0L0 12Z" fill="#B3AC9C"/>
-                        </svg>
-                    </div>
-                    <div id="BM"></div>
-                    <div id="BRC">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
-                            <path d="M15 12V-3.8743e-07H0L15 12Z" fill="black"/>
-                            <path d="M15 12H0V0L15 12Z" fill="#B3AC9C"/>
-                        </svg>
-                    </div>
+                <div class="score-count">
+                    HIGH SCORE: <span id="peak" class="score-color">0</span>
                 </div>
             </div>
-            <div id="control-container">
-                <div id="scoring-container-left">
-                    <div id="score-container">
-                        APPLES EATEN: <span id="score">0/874</span>
-                    </div>
-                    <div id="peak-container">
-                        HIGH SCORE: <span id="peak">0</span>
-                    </div>
-                </div>
-                <div id="name-container">
-                    <img src="/images/snakegamelogo.svg"/>
-                    <span>
-                        <img id="spacebar-img" src="images/spacebar-up.svg"/>
-                    </span>
-                </div>
-                <div id="ak-container">
-                    <div id="arrow-key-container">
-                        <div></div>
-                        <div><img id="arrow-up-img" src="images/up-arrow-up.svg"/></div>
-                        <div></div>
-                        <div><img id="arrow-left-img" src="images/left-arrow-up.svg"/></div>
-                        <div><img id="arrow-down-img" src="images/down-arrow-up.svg"/></div>
-                        <div><img id="arrow-right-img" src="images/right-arrow-up.svg"/></div>
-                    </div>
+            <div class="column-container name-container">
+                <img src="/images/snakegamelogo.svg"/>
+                <span>
+                    <img id="spacebar-img" src="images/spacebar-up.svg"/>
+                </span>
+            </div>
+            <div class="arrow-keys-container">
+                <div class="column-container arrow-keys">
+                    <div></div>
+                    <div><img id="arrow-up-img" src="images/up-arrow-up.svg"/></div>
+                    <div></div>
+                    <div><img id="arrow-left-img" src="images/left-arrow-up.svg"/></div>
+                    <div><img id="arrow-down-img" src="images/down-arrow-up.svg"/></div>
+                    <div><img id="arrow-right-img" src="images/right-arrow-up.svg"/></div>
                 </div>
             </div>
-        </div>
-        <div id="tv-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="684" viewBox="0 0 24 684" fill="none">
-                <path d="M0 0H24V660H0V0Z" fill="black"/>
-                <path d="M8.9407e-07 684L0 660H24L8.9407e-07 684Z" fill="black"/>
-            </svg>
         </div>
     </div>
     <script src="script.js"></script>

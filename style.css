@@ -1,92 +1,51 @@
-body {
+:root {
+    --canvas-top: 69px;
+    --canvas-left: 75px;
+}
+body, html {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #54534D;
-    margin: 0;
     min-height: 100vh;
-}
-canvas {
-    padding: 0;
     margin: 0;
-    background-color: #9DA6A4;
+    padding: 0;
 }
-#tv-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    gap: 0;
-}
-#tv-screen {
-    width: 900px;
-    height: 684px;
-    flex-shrink: 0;
-    border: 1.5px solid #000;
-    background: #222;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    padding-top: 32px;
-    flex-direction: column;
-}
-#tv-container svg {
-    display: block;
-}
-#screen-container {
-    display: flex;
-    width: 790px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#screen-top {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-}
-#TM {
-    height: 12px;
-    width: 760px;
-    align-self: stretch;
-    background: #B3AC9C;
-}
-#screen-mid {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-}
-#ML {
-    width: 15px;
-    height: 460px;
-    background: #54534D;
+.game-container {
+    background-image: url("images/background.svg");
+    width: 924px;
+    height: 708px;
     position: relative;
 }
-#MR {
-    width: 15px;
-    height: 460px;
-    background: #000;
+canvas {
+    background-color: #9DA6A4;
+    position: absolute;
+    top: var(--canvas-top);
+    left: var(--canvas-left);
+    z-index: 1;
 }
-#screen-bot {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-}
-#BM {
-    height: 12px;
+#game-overlay {
+    position: absolute;
+    top: var(--canvas-top);
+    left: var(--canvas-left);
     width: 760px;
-    background: #B3AC9C;
+    height: 460px;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
-#control-container {
+.control-container {
+    position: absolute;
+    top: 550px;
+    left: var(--canvas-left);
     display: flex;
-    flex: 1;
+    height: auto;
     width: 760px;
     flex-wrap: nowrap;
 }
-#score-container, #peak-container{
+.score-count {
     color: #9DA6A4;
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
@@ -94,41 +53,29 @@ canvas {
     font-size: 24px;
     padding-top: 16px;
 }
-#score, #peak{
+.score-color {
     color: rgb(0,255,0);
 }
-#scoring-container-left, #name-container, #arrow-key-container {
+.column-container {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-#name-container {
+.name-container {
     align-items: center;
     padding-top: 16px;
+    gap: 24px;
     flex: 1.5;
 }
-#name-container span {
-    padding-top: 24px;
-}
-#ak-container {
+.arrow-keys-container {
     display: flex;
     flex: 1;
 }
-#arrow-key-container {
+.arrow-keys {
     justify-content: center;
     padding-top: 44px;
     display: grid;
     grid-template-columns: repeat(3, 45px);
     grid-template-rows: repeat(2, 45px);
     gap: 0;
-}
-#gameOverlay {
-    position: absolute;
-    width: 760px;
-    height: 460px;
-    background: rgba(0,0,0,0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
 }
